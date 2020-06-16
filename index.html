@@ -24,6 +24,38 @@
   <body>
     <div id="app">
       <v-app id="inspire">
+        <v-container>
+          <v-row  
+            justify="space-between"
+          >
+            <v-col
+              cols="8"
+            >
+              <v-form ref="form">
+                <v-text-field
+                  v-model="unit"
+                  label="Unit"
+                ></v-text-field>
+              </v-form>
+            </v-col>
+      
+            <v-col
+              cols="8"
+
+            >
+     
+      
+            </v-col>
+            <v-col cols="6">Energy Charges
+
+            </v-col>
+            <v-col>
+              <v-avatar :color="color" :size="size">
+                <span class="white--text headline">₹{{energyCharge}}</span>
+              </v-avatar>
+            </v-col>
+          </v-row>
+        </v-container>
         <v-sparkline
           :value="value"
           :gradient="gradient"
