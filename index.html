@@ -43,7 +43,12 @@
               cols="8"
 
             >
-     
+            <v-form ref="form">
+              <v-text-field
+                v-model="months"
+                label="Number of months"
+              ></v-text-field>
+            </v-form>
       
             </v-col>
             <v-col cols="6">Energy Charges
@@ -56,14 +61,14 @@
             </v-col>
           </v-row>
           <v-row>
-            <!-- calculations
+            calculations
 
 
             <v-data-table
             :headers="headers"
             :items="split"
             class="elevation-1"
-          ></v-data-table> -->
+          ></v-data-table>
           </v-row>
         </v-container>
         <v-sparkline
